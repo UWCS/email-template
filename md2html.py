@@ -5,15 +5,17 @@ Adapted from sec-scripts repository
 import re
 import sys
 import argparse
+import pathlib
 
 if sys.version_info >= (3, 11):
     import tomllib
 else:
     import tomli as tomllib  # if Python <3.11, need to install via pip install tomli
 
-from typing import Any, Literal
 from markdown_it import MarkdownIt
 from mdit_py_plugins.tasklists import tasklists_plugin
+
+in_dir = pathlib.Path(__file__).resolve().parent
 
 def filter_front_matter(md_text: str, find_title: bool = False) -> tuple[str, str]:
     """
@@ -89,7 +91,7 @@ def create_html(filename: str = "your_content_here.md", remove_title: bool = Fal
     For example: your_content_here.md will have its html output to your_content_here.html
 
     Args:
-        filename (str, optional): Maps to -f/--filename - markdown target to convert to HTML
+        filename (str, optional): Maps to -f/--filename - markdown target to convert to HTML. Assumes relative to current working directory not the script path
         remove_title (bool, optional): Maps to -rt/--remove-title - will not insert any title found in frontmatter if True. Defaults to False.
         remove_sponsors (bool, optional): Maps to -rs/--remove-sponsors - will not insert sponsors from sponsors.md if True. Defaults to False.
         use_template (bool, optional): Maps to -b/--basic - won't use the template at all and creates plain HTML if False. Defaults to True.
@@ -102,9 +104,9 @@ def create_html(filename: str = "your_content_here.md", remove_title: bool = Fal
 
     else:
         body_html, title = open_and_render(filename, rt=remove_title)
-        spon_html, _ = open_and_render("sponsors.md", False) if not remove_sponsors else ("", "")
+        spon_html, _ = open_and_render(str(in_dir / "sponsors.md"), False) if not remove_sponsors else ("", "")
 
-        with open("template.html", encoding="utf8") as tpf:
+        with open(str(in_dir / "template.html"), encoding="utf8") as tpf:
             template = tpf.read()
             output_html = (
                 template
