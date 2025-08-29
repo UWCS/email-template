@@ -1,7 +1,8 @@
 # Sponsors - find out more at [https://uwcs.co.uk/sponsors](https://uwcs.co.uk/sponsors)
 The society relies on sponsorship to fund events, infrastructure, and all that free pizza you all love so much, so check them out!
 
-**Qube Research & Technologies (QRT)** 
+**Qube Research & Technologies (QRT)**
+
 Qube Research & Technologies (QRT) is a global quantitative and systematic investment manager operating in all liquid asset classes across the world. We are a technology and data driven group implementing a scientific approach to investing. Combining data, research, technology and trading expertise has shaped QRT’s collaborative and innovative mindset which enables us to solve the most complex challenges.
 
 We strongly believe that long-term investment into our people is critical to our future success and distinctive culture, as demonstrated by our low turnover in staff and continuous growth. We are proud of our exceptionally talented, collaborative and diverse teams, and now are looking to add motivated, intellectually curious STEM students and graduates with entrepreneurial spirit to our team. We have a number of internship, industrial placement and graduate roles across Software Engineering, Data Engineering & Analytics and Infrastructure & Cloud Engineering, all within our amazing new office that looks out over London.  
@@ -12,7 +13,8 @@ To find out more and apply to one of the 3 tracks mentioned above, visit our [In
 
 If you have any questions, please email [campus@qube-rt.com](mailto:campus@qube-rt.com)
 
-**CoreTech**  
+**CoreTech**
+
 CoreTech Security Services are proud to be a Gold sponsor of the UWCS for the remainder of the academic year. Our company has built a strong base of Warwick alumni, ranging from our most senior staff down to our incoming graduates and interns, and we’re proud to be able to support the incredible development work that UWCS do that make Warwick graduates great.
 
 CoreTech Security Services are a Cheltenham-based cybersecurity consultancy who specialise in vulnerability research, operational research, and bespoke software engineering. With around 50 deeply technical consultants, we work on a wide array of projects in small teams, doing anything from tearing apart hardware, to developing novel communications methods, to developing custom allocators, to breaking the latest mobile devices, to writing proof-of-concept mobile apps, to reverse engineering protocols, to building our in-house binary analysis tooling. All our roles require some level of UK security clearance, and we work closely with law enforcement to contribute to the protection of the UK and its people.
