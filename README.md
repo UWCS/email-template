@@ -2,7 +2,7 @@
 
 Adapted part of `sec-scripts`, this repo is intended to be an easy-to-find place for templates commonly used in writing emails, without extra baggage when re-using.
 - `template.html` contains the base template, with placeholders for `title`, `content` and `sponsors` that should all be replaced with the relevant HTML (or removed)
-- `sponsors.html` is a HTML version of `sponsors.md` and has the current society's sponsors for the academic year
+- `./sponsors` contains tier-separated markdown for sponsors
 - `md2html.py` contains a simple script that converts given markdown into HTML:
   - For this script, you need `markdown-it-py==3.0.0`, `mdit-py-plugins==0.4.2` and (if below Python 3.11) `tomli==2.2.1`
   - You can install these via `python -m pip install -r requirements.txt`
