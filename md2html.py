@@ -58,33 +58,39 @@ def nl_to_br(match: re.Match) -> str:
     content = match.group(1)
     return "<p>" + content.replace("\n", "<br>\n") + "</p>"  # newlines in paragraphs should have breaks added
 
-def open_and_render(filename: str, rt: bool = False) -> tuple[str, str]:
+def open_and_render(filenames: str | tuple[str], rt: bool = False) -> tuple[str, str]:
     """
     With the given filename, render markdown into string with various mdit options to ensure correct formatting.
 
     Args:
-        filename (str): Input filename
+        filenames (str | tuple[str]): Input filenames
         rt (bool, optional): Remove frontmatter title. Defaults to False.
 
     Returns:
         tuple[str, str]: string containing rendered html, and either string of title, or empty if not found/not requested 
     """
 
-    with open(filename, encoding="utf8") as f:
-        md_text, title = filter_front_matter(f.read(), find_title=not rt)
+    if type(filenames) is str:
+        filenames = [filenames]
+    
+    md_text = ""
+    for filename in filenames:
+        with open(filename, encoding="utf8") as f:
+            curr_md, title = filter_front_matter(f.read(), find_title=not rt)
+            md_text += "\n" * (2 - len(md_text) + len(md_text.rstrip("\n"))) + curr_md
 
-        md = (
-            MarkdownIt("commonmark", {"linkify": True, "typographer": True, "breaks": True})
-            .enable("table")
-            .enable("strikethrough")
-            .enable("autolink")
-            .use(tasklists_plugin)
-        )
+    md = (
+        MarkdownIt("commonmark", {"linkify": True, "typographer": True, "breaks": True})    
+        .enable("table")
+        .enable("strikethrough")
+        .enable("autolink")
+        .use(tasklists_plugin)
+    )
 
-        html = md.render(md_text)
-        return html, title
+    html = md.render(md_text)
+    return html, title
 
-def create_html(filename: str = "your_content_here.md", remove_title: bool = False, remove_sponsors: bool = False, no_template: bool = False) -> None:
+def create_html(filename: str = "your_content_here.md", remove_title: bool = False, remove_sponsors: bool = False, remove_bronze: bool = False, no_template: bool = False) -> None:
     """
     With a given input markdown file, create a html file with the rendered html and options applied
 
@@ -93,8 +99,9 @@ def create_html(filename: str = "your_content_here.md", remove_title: bool = Fal
     Args:
         filename (str, optional): Maps to -f/--filename - markdown target to convert to HTML. Assumes relative to current working directory not the script path
         remove_title (bool, optional): Maps to -rt/--remove-title - will not insert any title found in frontmatter if True. Defaults to False.
-        remove_sponsors (bool, optional): Maps to -rs/--remove-sponsors - will not insert sponsors from sponsors.md if True. Defaults to False.
-        use_template (bool, optional): Maps to -b/--basic - won't use the template at all and creates plain HTML if False. Defaults to True.
+        remove_sponsors (bool, optional): Maps to -rs/--remove-sponsors - will not insert any sponsors from sponsors/ if True. Defaults to False.
+        remove_bronze (bool, optional): Maps to -rb/--remove-bronze-sponsors - will not insert any sponsors from sponsors/03-bronze.md if True. Defaults to False. remove_sponsors has precedence.
+        no_template (bool, optional): Maps to -b/--basic - won't use the template at all and creates plain HTML if True. Defaults to False.
     """
 
     output = f"{filename.strip('.md')}.html"
@@ -104,7 +111,11 @@ def create_html(filename: str = "your_content_here.md", remove_title: bool = Fal
 
     else:
         body_html, title = open_and_render(filename, rt=remove_title)
-        spon_html, _ = open_and_render(str(in_dir / "sponsors.md"), False) if not remove_sponsors else ("", "")
+        
+        spon_html, _ = open_and_render(
+                [str(in_dir / "sponsors/01-gold.md"), str(in_dir / "sponsors/02-silver.md")]
+                + ([str(in_dir / "sponsors/03-bronze.md")] if not remove_bronze else []), False) if not remove_sponsors \
+                else ("", "")
 
         with open(str(in_dir / "template.html"), encoding="utf8") as tpf:
             template = tpf.read()
@@ -125,6 +136,7 @@ if __name__ == "__main__":
     parser.add_argument("-b", "--basic", action="store_true", help="Convert into normal HTML without the template")
     parser.add_argument("-f", "--filename", type=str, help="Target file to process")
     parser.add_argument("-rt", "--remove-title", action="store_true", help="Don't use frontmatter title from file")
+    parser.add_argument("-rb", "--remove-bronze-sponsors", action="store_true", help="Remove Bronze sponsors (e.g. for newsletters)")
     parser.add_argument("-rs", "--remove-sponsors", action="store_true", help="Remove sponsors from file")
 
     args = parser.parse_args()
@@ -132,4 +144,4 @@ if __name__ == "__main__":
     if args.filename is None:
         args.filename = "your_content_here.md"
     
-    create_html(args.filename, args.remove_title, args.remove_sponsors, not args.basic)
+    create_html(args.filename, args.remove_title, args.remove_sponsors, args.remove_bronze_sponsors, args.basic)
