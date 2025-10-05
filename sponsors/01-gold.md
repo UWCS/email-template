@@ -1,22 +1,41 @@
 # Sponsors - find out more at [https://uwcs.co.uk/sponsors](https://uwcs.co.uk/sponsors)
 The society relies on sponsorship to fund events, infrastructure, and all that free pizza you all love so much, so check them out!
 
-**Qube Research & Technologies (QRT)**
-
-Qube Research & Technologies (QRT) is a global quantitative and systematic investment manager operating in all liquid asset classes across the world. We are a technology and data driven group implementing a scientific approach to investing. Combining data, research, technology and trading expertise has shaped QRT’s collaborative and innovative mindset which enables us to solve the most complex challenges.
-
-We strongly believe that long-term investment into our people is critical to our future success and distinctive culture, as demonstrated by our low turnover in staff and continuous growth. We are proud of our exceptionally talented, collaborative and diverse teams, and now are looking to add motivated, intellectually curious STEM students and graduates with entrepreneurial spirit to our team. We have a number of internship, industrial placement and graduate roles across Software Engineering, Data Engineering & Analytics and Infrastructure & Cloud Engineering, all within our amazing new office that looks out over London.  
-
-We are one of the best performing and fastest growing multi-strat quant hedge funds over the last couple years and we are just getting started…
-
-To find out more and apply to one of the 3 tracks mentioned above, visit our [Internships & Industrial Placements](https://www.qube-rt.com/careers/intern-opportunities/) or [Graduate](https://www.qube-rt.com/careers/graduate-opportunities/) careers page.
-
-If you have any questions, please email [campus@qube-rt.com](mailto:campus@qube-rt.com)
 
 **CoreTech**
 
-CoreTech Security Services are proud to be a Gold sponsor of the UWCS for the remainder of the academic year. Our company has built a strong base of Warwick alumni, ranging from our most senior staff down to our incoming graduates and interns, and we’re proud to be able to support the incredible development work that UWCS do that make Warwick graduates great.
+CoreTech Security Services is a niche cyber security company based in Cheltenham, specialising in security cleared research and development. Our world-class, multi-disciplinary teams are highly experienced, deeply technical and blend vulnerability research with novel  platform research and high assurance software engineering to deliver end-to-end capabilities that contribute directly to the protection of the UK and its people.
 
-CoreTech Security Services are a Cheltenham-based cybersecurity consultancy who specialise in vulnerability research, operational research, and bespoke software engineering. With around 50 deeply technical consultants, we work on a wide array of projects in small teams, doing anything from tearing apart hardware, to developing novel communications methods, to developing custom allocators, to breaking the latest mobile devices, to writing proof-of-concept mobile apps, to reverse engineering protocols, to building our in-house binary analysis tooling. All our roles require some level of UK security clearance, and we work closely with law enforcement to contribute to the protection of the UK and its people.
+Our team of 70 deeply technical consultants work on challenging projects in small teams, offering exceptional technical depth and variety. Our work includes, among other things:
 
-We also have blogs on software engineering at CoreTech and blogs from two past interns, Fred and Jamie. Fred is a Warwick graduate and now works full-time in CoreTech’s software engineering team. Visit them at [https://www.coretech-security.com/](https://www.coretech-security.com/).
+- Tearing apart both hardware and software to discover hidden vulnerabilities
+- Developing novel communications methods for secure environments
+- Designing and developing highly assured, performant systems for niche platforms
+- Writing proofs-of-concept to demonstrate discovered or publicly known security flaws
+- Reverse engineering protocols to understand, replicate or manipulate
+- Creating custom memory allocators and analytics for performance-critical systems
+- Building in-house binary analysis tooling to enhance our capabilities
+
+We also have blogs on software engineering at CoreTech and blogs from two past interns, Fred and Jamie. Fred is a Warwick graduate and now works full-time in CoreTech’s software engineering team.
+
+Find out more at: [https://www.coretechsec.com/](https://www.coretechsec.com/)
+
+**HubSpot**
+
+HubSpot is an AI-powered customer platform with all the software, integrations, and resources you need to connect your marketing, sales, and customer service. Our mission is to help millions of organizations grow better.
+
+Find out more at: [https://www.hubspot.com/careers/emerging-talent](https://www.hubspot.com/careers/emerging-talent)
+
+**LUNA Students & Burnsall House**
+
+We’re proud to be partnered with LUNA Students, a student accommodation provider offering modern, all-in-one studios right here in Canley. 
+
+Their Warwick residence – Burnsall House – is just a 15-minute walk to campus and packed with thoughtful features, including in-room washer/dryers, full kitchens, and a range of spacious studio layouts. 
+
+Each studio comes with a generously sized desk – perfect for coding, studying, or setting up your full gaming rig or multi-screen setup (UWCS priorities, obviously). 
+
+It’s not just about your room, though. Burnsall House also offers brilliant social and study spaces designed to help you stay focused when you need to – and unwind when you don’t. From quiet corners to chill-out zones, there’s a space for every kind of day. 
+
+LUNA offers flexible contracts, low weekly rates, and a friendly student community, making it a great option for anyone looking for independence with all the perks of purpose-built living. 
+
+Learn more at [https://lunastudents.co.uk/student-accommodation/burnsall-house/](https://lunastudents.co.uk/student-accommodation/burnsall-house/) – and big thanks to LUNA for supporting UWCS this year!
