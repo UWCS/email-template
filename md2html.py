@@ -2,6 +2,7 @@
 Adapted from sec-scripts repository
 """
 
+import os
 import re
 import sys
 import argparse
@@ -144,4 +145,4 @@ if __name__ == "__main__":
     if args.filename is None:
         args.filename = "your_content_here.md"
     
-    create_html(args.filename, args.remove_title, args.remove_sponsors, args.remove_bronze_sponsors, args.basic)
+    create_html(os.path.realpath(args.filename), args.remove_title, args.remove_sponsors, args.remove_bronze_sponsors, args.basic)
