@@ -11,7 +11,8 @@ import pathlib
 if sys.version_info >= (3, 11):
     import tomllib
 else:
-    import tomli as tomllib  # if Python <3.11, need to install via pip install tomli
+    print("Python 3.11 or above required.")
+    exit()
 
 from markdown_it import MarkdownIt
 from mdit_py_plugins.tasklists import tasklists_plugin
@@ -59,7 +60,7 @@ def nl_to_br(match: re.Match) -> str:
     content = match.group(1)
     return "<p>" + content.replace("\n", "<br>\n") + "</p>"  # newlines in paragraphs should have breaks added
 
-def open_and_render(filenames: str | tuple[str], rt: bool = False) -> tuple[str, str]:
+def open_and_render(filenames: str | list[str], rt: bool = False) -> tuple[str, str]:
     """
     With the given filename, render markdown into string with various mdit options to ensure correct formatting.
 

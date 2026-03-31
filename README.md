@@ -4,7 +4,7 @@ Adapted part of `sec-scripts`, this repo is intended to be an easy-to-find place
 - `template.html` contains the base template, with placeholders for `title`, `content` and `sponsors` that should all be replaced with the relevant HTML (or removed)
 - `./sponsors` contains tier-separated markdown for sponsors
 - `md2html.py` contains a simple script that converts given markdown into HTML:
-  - For this script, you need `markdown-it-py==3.0.0`, `mdit-py-plugins==0.4.2` and (if below Python 3.11) `tomli==2.2.1`
+  - For this script, you need Python 3.11+, with `markdown-it-py==3.0.0`, `mdit-py-plugins==0.4.2`
   - You can install these via `python -m pip install -r requirements.txt`
   - The script can be run via the command line or via importing and calling `create_html` with keyword arguments, with the following options provided:
     - Command line: `-b`/`--basic`, function argument: `no_template` - Generate a plain HTML equivalent of the markdown file, without using `template.html` or `sponsors.md`. This is `False` if not provided.
