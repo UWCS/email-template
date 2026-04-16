@@ -8,18 +8,19 @@ import sys
 import argparse
 import pathlib
 
+from typing import Union, List, Tuple
+
 if sys.version_info >= (3, 11):
     import tomllib
 else:
-    print("Python 3.11 or above required.")
-    exit()
+    import tomli as tomllib
 
 from markdown_it import MarkdownIt
 from mdit_py_plugins.tasklists import tasklists_plugin
 
 in_dir = pathlib.Path(__file__).resolve().parent
 
-def filter_front_matter(md_text: str, find_title: bool = False) -> tuple[str, str]:
+def filter_front_matter(md_text: str, find_title: bool = False) -> Tuple[str, str]:
     """
     Filter out frontmatter e.g. used by Zola in stardust, and extract "title" from said frontmatter if requested
 
@@ -33,13 +34,13 @@ def filter_front_matter(md_text: str, find_title: bool = False) -> tuple[str, st
         find_title (bool, optional): Grab the title from the frontmatter. Defaults to False.
 
     Returns:
-        tuple[str, str]: A tuple containing a string of the filtered markdown content, and a string containing either the found title, or empty if not found/not requested
+        Tuple[str, str]: A tuple containing a string of the filtered markdown content, and a string containing either the found title, or empty if not found/not requested
     """
 
     fm_match = re.match(r"^\s*\+\+\+\n(.*?)\n\+\+\+\s*\n?", md_text, re.DOTALL)
     if not fm_match:
         return md_text, ""  # return original if no frontmatter
-    
+
     fm_text = fm_match.group(1)
     md_body = md_text[fm_match.end():]
     return md_body, tomllib.loads(fm_text).get("title", "") if find_title else ""
@@ -60,21 +61,21 @@ def nl_to_br(match: re.Match) -> str:
     content = match.group(1)
     return "<p>" + content.replace("\n", "<br>\n") + "</p>"  # newlines in paragraphs should have breaks added
 
-def open_and_render(filenames: str | list[str], rt: bool = False) -> tuple[str, str]:
+def open_and_render(filenames: Union[str, List[str]], rt: bool = False) -> Tuple[str, str]:
     """
     With the given filename, render markdown into string with various mdit options to ensure correct formatting.
 
     Args:
-        filenames (str | tuple[str]): Input filenames
+        filenames (Union[str, List[str]]): Input filenames
         rt (bool, optional): Remove frontmatter title. Defaults to False.
 
     Returns:
-        tuple[str, str]: string containing rendered html, and either string of title, or empty if not found/not requested 
+        Tuple[str, str]: string containing rendered html, and either string of title, or empty if not found/not requested 
     """
 
     if type(filenames) is str:
         filenames = [filenames]
-    
+
     md_text = ""
     for filename in filenames:
         with open(filename, encoding="utf8") as f:
@@ -82,7 +83,7 @@ def open_and_render(filenames: str | list[str], rt: bool = False) -> tuple[str, 
             md_text += "\n" * (2 - len(md_text) + len(md_text.rstrip("\n"))) + curr_md
 
     md = (
-        MarkdownIt("commonmark", {"linkify": True, "typographer": True, "breaks": True})    
+        MarkdownIt("commonmark", {"linkify": True, "typographer": True, "breaks": True})
         .enable("table")
         .enable("strikethrough")
         .enable("autolink")
@@ -145,5 +146,5 @@ if __name__ == "__main__":
 
     if args.filename is None:
         args.filename = "your_content_here.md"
-    
+
     create_html(os.path.realpath(args.filename), args.remove_title, args.remove_sponsors, args.remove_bronze_sponsors, args.basic)
