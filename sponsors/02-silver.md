@@ -1,16 +1,10 @@
-**G-Research**
+**__Bending Spoons__**
 
-[G-Research](https://www.gresearch.com/) is a leading quantitative research and technology firm. We use cutting-edge machine learning, AI and big data analytics to forecast global financial markets and build smart strategies for our clients.
+We acquire and transform digital businesses. Among others, we own Vimeo, Evernote, komoot, Meetup, Eventbrite, StreamYard, and WeTransfer. Together, our products have served over a billion people around the world, with more than 300 million monthly active users and 10 million paying customers. Post-acquisition, we go all in to unlock a business's full potential, often overhauling the technology, redesigning the user interface, accelerating product development, optimizing marketing and monetization, and reshaping the organization for lasting success. We have offices in Milan and London, and a relentless focus on talent density and workplace excellence.
 
-Our work is driven by collaboration between world-class talent – from researchers and data scientists to software engineers – all working together in a culture that values curiosity, rigour and long-term thinking. We believe great ideas take time and we’ve built a platform that helps our people turn deep research into impactful solutions.
+Find out more at: [https://bendingspoons.com/careers](https://bendingspoons.com/careers)
 
-We’re proud to sponsor Warwick Computing Society and support its mission to connect, inspire and equip future technologists. As a business built on innovation, we’re always looking to champion the next generation of talent who will help shape the future of research and technology.
-
-Through [G-Research Next Gen](https://www.gresearch.com/nextgen/), we work with universities, student societies, educational charities and outreach programmes to support young people from all backgrounds to pursue studies and careers in STEM. By investing in the next generation, we’re investing in a future driven by discovery and progress.
-
-Find out more at: [https://www.gresearch.com](https://www.gresearch.com/)
-
-**Marshall Wace**
+**__Marshall Wace__**
 
 Marshall Wace is a leading provider of alternative investment solutions. 
 

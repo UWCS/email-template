@@ -1,5 +1,7 @@
 # UWCS-branded HTML and Markdown templating
 
+Sponsors up-to-date as of 26/27.
+
 Adapted part of `sec-scripts`, this repo is intended to be an easy-to-find place for templates commonly used in writing emails, without extra baggage when re-using.
 - `template.html` contains the base template, with placeholders for `title`, `content` and `sponsors` that should all be replaced with the relevant HTML (or removed)
 - `./sponsors` contains tier-separated markdown for sponsors

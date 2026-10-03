@@ -2,7 +2,7 @@
 The society relies on sponsorship to fund events, infrastructure, and all that free pizza you all love so much, so check them out!
 
 
-**CoreTech**
+**__CoreTech__**
 
 CoreTech Security Services is a niche cyber security company based in Cheltenham, specialising in security cleared research and development. Our world-class, multi-disciplinary teams are highly experienced, deeply technical and blend vulnerability research with novel  platform research and high assurance software engineering to deliver end-to-end capabilities that contribute directly to the protection of the UK and its people.
 
@@ -20,13 +20,13 @@ We also have blogs on software engineering at CoreTech and blogs from two past i
 
 Find out more at: [https://www.coretechsec.com/](https://www.coretechsec.com/)
 
-**HubSpot**
+**__HubSpot__**
 
 HubSpot is an AI-powered customer platform with all the software, integrations, and resources you need to connect your marketing, sales, and customer service. Our mission is to help millions of organizations grow better.
 
 Find out more at: [https://www.hubspot.com/careers/emerging-talent](https://www.hubspot.com/careers/emerging-talent)
 
-**LUNA Students & Burnsall House**
+**__LUNA Students & Burnsall House__**
 
 We’re proud to be partnered with LUNA Students, a student accommodation provider offering modern, all-in-one studios right here in Canley. 
 
@@ -39,3 +39,21 @@ It’s not just about your room, though. Burnsall House also offers brilliant so
 LUNA offers flexible contracts, low weekly rates, and a friendly student community, making it a great option for anyone looking for independence with all the perks of purpose-built living. 
 
 Learn more at [https://lunastudents.co.uk/student-accommodation/burnsall-house/](https://lunastudents.co.uk/student-accommodation/burnsall-house/) – and big thanks to LUNA for supporting UWCS this year!
+
+**__IMC Trading__**
+
+**A GLOBAL TRADING FIRM**
+
+**POWERED BY RESEARCH AND TECHNOLOGY**
+
+IMC stands for International Marketmakers Combination.
+
+It was founded in 1989 by two traders working on the floor of the Amsterdam Equity Options Exchange. Back then, trading was executed on the exchange floor by traders manually calculating the price to buy or sell. IMC was among the first to spot the importance of technology and innovation in the evolution of market making and invested early, helping shape the future of trading.
+
+In 35+ years, we’ve scaled globally, with offices in the US, Europe, and Asia Pacific. Today, IMC is where the brightest minds in quant research, tech, and trading collaborate to solve the most challenging problems in the trading industry. We hire and develop exceptional, high-performing
+
+people, and empower them with cutting-edge, disruptive technologies—including AI, machine learning, and large-scale computing.
+
+Our collaborative, high-performance culture sets us apart. IMCers turn our competitive instincts outward, driving success through our cross-functional quant research, engineering, trading, and business operations teams.
+
+Find out more at: [https://www.imc.com/eu/careers/students-graduates](https://www.imc.com/eu/careers/students-graduates)
